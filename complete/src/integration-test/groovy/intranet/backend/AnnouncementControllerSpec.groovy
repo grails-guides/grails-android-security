@@ -8,18 +8,34 @@ import javax.servlet.http.HttpServletResponse
 
 
 @Integration
-class AnnouncementControllerSpec extends Specification {
+class AnnouncementControllerSpec extends Specification implements WatsonLogin {
 
     @Value('${local.server.port}') // <1>
     Integer serverPort
 
-    def "test body is present in announcements json payload of Api 1.0"() {
-        given:
-        RestBuilder rest = new RestBuilder()
-
+    def "test /annoucements/ endpoint is secured"() {
         when: 'Requesting announcements for version 1.0'
         def resp = rest.get("http://localhost:${serverPort}/announcements/") {
             header("Accept-Version", "1.0") // <2>
+        }
+
+        then: 'the request was successful'
+        resp.status == HttpServletResponse.SC_UNAUTHORIZED
+    }
+
+    def "test body is present in announcements json payload of Api 1.0"() {
+
+        when: 'login with the watson'
+        String accessToken = loginAsWatson()
+
+        then: 'watson is logged, thus he has a valid access token'
+        accessToken
+
+        when: 'Requesting announcements for version 1.0'
+        RestBuilder rest = new RestBuilder()
+        def resp = rest.get("http://localhost:${serverPort}/announcements/") {
+            header("Accept-Version", "1.0") // <2>
+            header("Authorization", "Bearer ${accessToken}")
         }
 
         then: 'the request was successful'
@@ -40,9 +56,16 @@ class AnnouncementControllerSpec extends Specification {
         given:
         RestBuilder rest = new RestBuilder()
 
+        when: 'login with the watson'
+        String accessToken = loginAsWatson()
+
+        then: 'watson is logged, thus he has a valid access token'
+        accessToken
+
         when: 'Requesting announcements for version 2.0'
         def resp = rest.get("http://localhost:${serverPort}/announcements/") {
             header("Accept-Version", "2.0")
+            header("Authorization", "Bearer ${accessToken}")
         }
 
         then: 'the request was successful'
@@ -63,10 +86,17 @@ class AnnouncementControllerSpec extends Specification {
         given:
         RestBuilder rest = new RestBuilder()
 
+        when: 'login with the watson'
+        String accessToken = loginAsWatson()
+
+        then: 'watson is logged, thus he has a valid access token'
+        accessToken
+
         when: 'Requesting announcements for version 1.0'
         def annoucementId = 2 as Long
         def resp = rest.get("http://localhost:${serverPort}/announcements/${annoucementId}") {
             header("Accept-Version", "1.0")
+            header("Authorization", "Bearer ${accessToken}")
         }
 
         then: 'the request was successful'
@@ -83,6 +113,7 @@ class AnnouncementControllerSpec extends Specification {
         when: 'Requesting announcements for version 1.0'
         resp = rest.get("http://localhost:${serverPort}/announcements/${annoucementId}") {
             header("Accept-Version", "2.0")
+            header("Authorization", "Bearer ${accessToken}")
         }
 
         then: 'the request was successful'

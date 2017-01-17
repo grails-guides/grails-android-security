@@ -1,14 +1,38 @@
 package intranet.backend
 
 import groovy.transform.CompileStatic
+import groovy.transform.TypeCheckingMode
 
 @CompileStatic
 class BootStrap {
 
     def init = { servletContext ->
         announcements().each { it.save() }
+        populateDatabaseWithUsersAndAccessRoles()
     }
     def destroy = {
+    }
+
+    @CompileStatic(TypeCheckingMode.SKIP)
+    static void populateDatabaseWithUsersAndAccessRoles() {
+        def authorities = ['ROLE_BOSS', 'ROLE_EMPLOYEE']
+        authorities.each { String authority ->
+            if ( !SecurityRole.findByAuthority(authority) ) {
+                new SecurityRole(authority).save()
+            }
+        }
+
+        if ( !User.findByUsername('sherlock') ) {
+            def u = new User(username: 'sherlock', password: 'elementary')
+            u.save()
+            new UserSecurityRole(u, SecurityRole.findByAuthority('ROLE_BOSS')).save()
+        }
+
+        if ( !User.findByUsername('watson') ) {
+            def u = new User(username: 'watson', password: '221Bbakerstreet')
+            u.save()
+            new UserSecurityRole(u, SecurityRole.findByAuthority('ROLE_EMPLOYEE')).save()
+        }
     }
 
     static List<Announcement> announcements() {
