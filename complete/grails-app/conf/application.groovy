@@ -34,6 +34,8 @@ grails {
 					[pattern: '/**/css/**', access: ['permitAll']],
 					[pattern: '/**/images/**', access: ['permitAll']],
 					[pattern: '/**/favicon.ico', access: ['permitAll']],
+					[pattern: '/announcements/*',  access: ['ROLE_BOSS'], httpMethod: 'DELETE'],
+					[pattern: '/announcements',  access: ['ROLE_BOSS'], httpMethod: 'POST'],
 					[pattern: '/announcements',  access: ['ROLE_BOSS', 'ROLE_EMPLOYEE']],
 					[pattern: '/announcements/*',  access: ['ROLE_BOSS', 'ROLE_EMPLOYEE']],
 					[pattern: '/api/login',  access: ['ROLE_ANONYMOUS']],

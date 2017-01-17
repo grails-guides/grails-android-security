@@ -2,19 +2,32 @@ package intranet.backend
 
 import grails.plugins.rest.client.RestBuilder
 import grails.test.mixin.integration.Integration
+import grails.transaction.Rollback
 import org.springframework.beans.factory.annotation.Value
 import spock.lang.Specification
 import javax.servlet.http.HttpServletResponse
 
-
+@Rollback
 @Integration
-class AnnouncementControllerSpec extends Specification implements WatsonLogin {
+class AnnouncementControllerSpec extends Specification implements LoginAs {
 
     @Value('${local.server.port}') // <1>
     Integer serverPort
 
+    def "PUT /annoucements/ endpoint is secured"() {
+        when: 'Requesting announcements for version 1.0'
+        RestBuilder rest = new RestBuilder()
+        def resp = rest.put("http://localhost:${serverPort}/announcements/1") {
+            header("Accept-Version", "1.0") // <2>
+        }
+
+        then: 'the request was successful'
+        resp.status == HttpServletResponse.SC_UNAUTHORIZED
+    }
+
     def "test /annoucements/ endpoint is secured"() {
         when: 'Requesting announcements for version 1.0'
+        RestBuilder rest = new RestBuilder()
         def resp = rest.get("http://localhost:${serverPort}/announcements/") {
             header("Accept-Version", "1.0") // <2>
         }
@@ -23,10 +36,11 @@ class AnnouncementControllerSpec extends Specification implements WatsonLogin {
         resp.status == HttpServletResponse.SC_UNAUTHORIZED
     }
 
+
     def "test body is present in announcements json payload of Api 1.0"() {
 
         when: 'login with the watson'
-        String accessToken = loginAsWatson()
+        String accessToken = loginAs('watson', '221Bbakerstreet')
 
         then: 'watson is logged, thus he has a valid access token'
         accessToken
@@ -57,7 +71,7 @@ class AnnouncementControllerSpec extends Specification implements WatsonLogin {
         RestBuilder rest = new RestBuilder()
 
         when: 'login with the watson'
-        String accessToken = loginAsWatson()
+        String accessToken = loginAs('watson', '221Bbakerstreet')
 
         then: 'watson is logged, thus he has a valid access token'
         accessToken
@@ -87,7 +101,7 @@ class AnnouncementControllerSpec extends Specification implements WatsonLogin {
         RestBuilder rest = new RestBuilder()
 
         when: 'login with the watson'
-        String accessToken = loginAsWatson()
+        String accessToken = loginAs('watson', '221Bbakerstreet')
 
         then: 'watson is logged, thus he has a valid access token'
         accessToken
