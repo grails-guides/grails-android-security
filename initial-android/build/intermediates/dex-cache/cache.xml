@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_9189652ef8c953afa88b3fcb2e00a48722db269f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_14e89cb8ec558815ebac6e633e0d247e02cffe79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_b3f007419f84d1293bea63547b741d38b61f3397/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_6fbd2309b4d831fd04dfec8433acfa9532b72cdd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f030ce62ae42737911322949e72ff7c9347247a9">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c15a0b02c25246c54a8bbab910a59fdcdfd08deb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751a43ba5e11036d4d212af2148ec435ab41b49a">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e829ee8331c39a46867448f2f6975d0823584b8a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_74ac76d97ff74189b1f7e6f573253b83dbe5f9ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_3d0e5062fd3da619b4f41051a9a777972880151d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/.sdkman/candidates/gradle/2.14.1/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.11.0_11338df0ea663971baa2f5917255a9fe7a82ac9b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_49eabfe03ace511ec07377fa94f6dccc96be37c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_877932233d05f8439b790a6ea0bc688ab396f083/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_5257f707a6f7431f9ea964e1246d05ade05cbb10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_d021584e93bab9dbba661df408cb16d06e720bde/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/.sdkman/candidates/gradle/2.14.1/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.0_4e512b22a66cce038e45a1ee4f3df7f776eaf327/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sdelamo/.sdkman/candidates/gradle/2.14.1/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.5.0/4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83/okhttp-3.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
+        <dex dex="/Users/sdelamo/git/grails/building-an-android-client-powered-by-a-grails-backend/complete-android-v2/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.5.0_93f43922a9e13d35b00b222b3ee0e0d9b9fe7514/classes.dex" />
+    </item>
+
+</items>
