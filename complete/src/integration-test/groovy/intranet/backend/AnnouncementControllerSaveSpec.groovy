@@ -14,9 +14,6 @@ import javax.servlet.http.HttpServletResponse
 @Integration
 class AnnouncementControllerSaveSpec extends Specification implements LoginAs {
 
-    @Value('${local.server.port}')
-    Integer serverPort
-
     def "POST /annoucements endpoint is secured"() {
         when: 'Requesting announcements'
         RestBuilder rest = new RestBuilder()

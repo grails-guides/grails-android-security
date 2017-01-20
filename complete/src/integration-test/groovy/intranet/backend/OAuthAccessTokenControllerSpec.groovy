@@ -14,9 +14,6 @@ import javax.servlet.http.HttpServletResponse
 @Integration
 class OAuthAccessTokenControllerSpec extends Specification {
 
-    @Value('${local.server.port}')
-    Integer serverPort
-
     def "POST /oauth/access_token endpoint is secured"() {
         when: 'Requesting announcements'
         RestBuilder rest = new RestBuilder()

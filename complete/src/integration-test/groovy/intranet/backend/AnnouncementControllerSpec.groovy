@@ -11,13 +11,10 @@ import javax.servlet.http.HttpServletResponse
 @Integration
 class AnnouncementControllerSpec extends Specification implements LoginAs {
 
-    @Value('${local.server.port}') // <1>
-    Integer serverPort
-
     def "PUT /annoucements/ endpoint is secured"() {
         when: 'Requesting announcements for version 1.0'
         RestBuilder rest = new RestBuilder()
-        def resp = rest.put("http://localhost:${serverPort}/announcements/1") {
+        def resp = rest.put("http://localhost:${serverPort}/announcements/1") { // <1>
             header("Accept-Version", "1.0") // <2>
         }
 

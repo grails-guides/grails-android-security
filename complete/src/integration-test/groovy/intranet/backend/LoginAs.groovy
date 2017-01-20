@@ -6,9 +6,6 @@ import org.springframework.beans.factory.annotation.Value
 
 trait LoginAs {
 
-    @Value('${local.server.port}')
-    Integer serverPort
-
     /**
      *
      * @return access_token

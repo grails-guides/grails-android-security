@@ -12,9 +12,6 @@ import javax.servlet.http.HttpServletResponse
 @Integration
 class AnnouncementControllerDeleteSpec extends Specification implements LoginAs {
 
-    @Value('${local.server.port}')
-    Integer serverPort
-
     def "DELETE /annoucements/ endpoint is secured"() {
         when: 'Requesting announcements for version 1.0'
         RestBuilder rest = new RestBuilder()
