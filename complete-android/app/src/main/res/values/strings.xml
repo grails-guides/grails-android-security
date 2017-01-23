@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GrailsClient</string>
+    <string name="action_bar_title">Logged username:</string>
+    <string name="password_hint">Password</string>
+    <string name="password_error_size">more than 4 characters</string>
+    <string name="username_hint">Username</string>
+    <string name="username_error_invalid">enter a valid username</string>
+    <string name="login">Login</string>
+    <string name="login_progress_message">Authenticating...</string>
+    <string name="login_failed_message">Login failed</string>
+    <string name="login_unauthorized_message">Wrong User credentails</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_logout">Logout</string>
+    <string name="title_hint">Title</string>
+    <string name="message_hint">Message</string>
+    <string name="save">Save</string>
+    <string name="create_announcement_unauthorized_message">Unauthorized to create announcements</string>
+    <string name="create_announcement_failed_message">Failure while creating annoucement</string>
+</resources>
