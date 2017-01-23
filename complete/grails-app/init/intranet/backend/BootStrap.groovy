@@ -29,7 +29,7 @@ class BootStrap {
         }
 
         if ( !User.findByUsername('watson') ) {
-            def u = new User(username: 'watson', password: '221Bbakerstreet')
+            def u = new User(username: 'watson', password: '221BakerStreet')
             u.save()
             new UserSecurityRole(u, SecurityRole.findByAuthority('ROLE_EMPLOYEE')).save()
         }

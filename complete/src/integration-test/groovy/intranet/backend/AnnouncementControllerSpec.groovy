@@ -37,7 +37,7 @@ class AnnouncementControllerSpec extends Specification implements LoginAs {
     def "test body is present in announcements json payload of Api 1.0"() {
 
         when: 'login with the watson'
-        String accessToken = loginAs('watson', '221Bbakerstreet')
+        String accessToken = loginAs('watson', '221BakerStreet')
 
         then: 'watson is logged, thus he has a valid access token'
         accessToken
@@ -68,7 +68,7 @@ class AnnouncementControllerSpec extends Specification implements LoginAs {
         RestBuilder rest = new RestBuilder()
 
         when: 'login with the watson'
-        String accessToken = loginAs('watson', '221Bbakerstreet')
+        String accessToken = loginAs('watson', '221BakerStreet')
 
         then: 'watson is logged, thus he has a valid access token'
         accessToken
@@ -98,7 +98,7 @@ class AnnouncementControllerSpec extends Specification implements LoginAs {
         RestBuilder rest = new RestBuilder()
 
         when: 'login with the watson'
-        String accessToken = loginAs('watson', '221Bbakerstreet')
+        String accessToken = loginAs('watson', '221BakerStreet')
 
         then: 'watson is logged, thus he has a valid access token'
         accessToken

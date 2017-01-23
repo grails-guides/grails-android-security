@@ -26,7 +26,7 @@ class AnnouncementControllerDeleteSpec extends Specification implements LoginAs 
     def "DELETE /annoucements/ endpoint is not allowed for users without ROLE_BOSS"() {
 
         when: 'login with the watson'
-        String accessToken = loginAs('watson', '221Bbakerstreet')
+        String accessToken = loginAs('watson', '221BakerStreet')
 
         then: 'watson is logged, thus he has a valid access token'
         accessToken
